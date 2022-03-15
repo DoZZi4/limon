@@ -1,0 +1,31 @@
+body {
+    background-color:black;
+}
+.links a {
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.phone {
+    color: white;
+}
+.par {
+    color: aliceblue;
+}
+.naz {
+    color: aliceblue;
+    font-size: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.mil {
+    color: aliceblue;
+}
+.text {
+    color: aliceblue;
+}
+.links2 {
+    color: aqua;
+}
