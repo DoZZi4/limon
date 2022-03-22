@@ -1,21 +1,29 @@
 body {
-    background-color:black
+    background-color:black;
+    padding-left: 35px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 35px;
+    background-image:url(images/mohammad-hoseini-rad-1490799-unsplash.png) ;
+    background-size: cover;
+background-repeat: no-repeat
 }
 .links a {
     color: aliceblue;
     text-decoration: none;
     text-transform: uppercase;
     font-family: sans-serif;
+    margin-left: 47px;
 }
 .phone {
     color: white;
 }
 .par {
-    color: aliceblue;
+    color:#F2890F;
 }
 .naz {
     color: aliceblue;
-    font-size: 80px;
+    font-size: 92px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: sans-serif;
@@ -28,4 +36,39 @@ body {
 }
 .links2 {
     color: aqua;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 94px;
+    /* margin-bottom: 125px; */
+}
+.pynk {
+    display: flex;
+    margin-left: 25px;
+}
+.quest__condition {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 27px;
+}
+.pynk img {
+    margin-right: 9px;
+}
+.modal {
+    display: flex;
+    background: #F28A0F;
+    border-radius: 65px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 47px;
+    padding-right: 47px;
+    color: aliceblue;
 }
