@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="george.css">
+	<meta charset="utf-8">
+	<title>Калькулятор</title>
 </head>
 <body>
-    <div class="lipon">На картинке изображено 4 медведя:мама медведь и 3 медвежонка</div>
-    <img src="https://s1.1zoom.ru/big0/416/Cubs_Brown_Bears_436748.jpg" alt="">
-    <div class="lipon1">На картинке изображен автомобиль Ferrari</div>
-    <img src="https://sun9-31.userapi.com/impg/IvYj_sMdNz2fwWAK-ZHDOC0221kXsS_9MhevUA/CEinQcHf33g.jpg?size=604x401&quality=96&sign=58e5e3342df1325eec5b91252e5df426&c_uniq_tag=_L_fao9-CjAScGMv_mQFdHahfRTT62vQXqEwQ54NYZ0&type=album" alt="">
-    <div class="lipon2">На картинке изображена эльфиева башня</div>
-    <img src="https://paris-life.info/wp-content/uploads/2016/11/Eiffel-Tower-768x512.jpg" alt="">
-    <div class="lipon3">На картинке изображена ламборгини авентадор,а на заднем плане природа</div>
-    <img src="https://i03.fotocdn.net/s118/bcf368367ef488e9/gallery_m/2696295224.jpg" alt="">
-    <div class="lipon4">На картинке изображены красивые большие горы</div>
-    <img src="https://img2.goodfon.ru/original/640x480/c/ff/gory-ozero-derevya-skaly.jpg" alt="">
-    <div class="lipon5">На картинке изображена гора Эльбрус</div>
-    <img src="https://supersnimki.ru/images/pub/2017/10/13/7da59bfd-afe0-11e7-bb69-d6e9329262a3_thumb.jpg" alt="">
-    <div class="lipon6">Архитектура Нью-Йорка Манхеттен</div>
-    <img src="https://avatars.mds.yandex.net/get-pdb/245485/bf127c34-1a52-476b-953c-24dd442283c3/s600?webp=false" alt="">
-    <div class="lipon7">Остров Патмос Алтай</div>
-    <img src="https://avatars.mds.yandex.net/get-pdb/199965/e4f8ec3d-4c0b-435c-a15e-86f333e61761/s600?webp=false" alt="">
-    <div class="lipon8">шевроле камаро сс 2016</div>
-    <img src="https://www.dsf.my/wp-content/uploads/2018/11/chevy1-600x353.png" alt="">
-    <div id="lipon9">Остров кос Эгейское море</div>
-    <img src="https://static.hosteltur.com/app/public/uploads/img/articles/2019/04/17/M_163043_kos-2.jpg" alt="">
+	<!-- поле ввода первого числа -->
+	<input id="num1" />
 
+	<!-- блок с кнопками -->
+	<div id="operator_btns">
+	<button id="plus" >+</button>
+	<button id="minus" >-</button>
+	<button id="times" >x</button>
+	<button id="divide" >:</button>
+	</div>
+
+	<!-- поле ввода второго числа -->
+	<input id="num2" />
+	<br>
+
+	<!-- кнопка для рассчётов -->
+	<button id="count">Посчитать</button>
+    <p id="result"></p>
+    <script src="main.js"></script>
 </body>
 </html>
