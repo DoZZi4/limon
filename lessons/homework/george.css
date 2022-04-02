@@ -1,0 +1,30 @@
+#plus {
+    color:black;
+    background-color: orange;
+}
+#minus {
+    color: black;
+    background-color: orange;
+}
+#times {
+    color: black;
+    background-color: orange;
+}
+#divide {
+    color: black;
+    background-color: orange;
+}
+#count {
+    color: black;
+    background-color: orange;
+}
+body {
+    color: orange;
+    background-color: black;
+}
+#num1 {
+    background-color: grey;
+}
+#num2 {
+    background-color: grey;
+}
