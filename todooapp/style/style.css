@@ -1,0 +1,41 @@
+#plus {
+    background-color: blue;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+body {
+    color: black;
+}
+.tesks {
+    display: flex;
+    margin-left: 20vh;
+    margin-right: 20%;
+    border-radius: 8%;
+    justify-content: center;
+    background-color:#21212B;
+    color: #9D9DA3;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#click {
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+}
+
+#title {
+    background-color: #181820;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-left: 50vh;
+    margin-right: 50vh;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    border-radius: 15%;
+    height: 60px;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
