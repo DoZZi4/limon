@@ -1,4 +1,4 @@
-function DeleteTask (list , TasksIndex) {
+function DeleteTask (list , TasksIndex ) {
     let Dtask = [] ;
     for (let i = 0 ;i<list.length;i++ ){
         if (i!== TasksIndex){

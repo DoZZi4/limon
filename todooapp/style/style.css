@@ -74,17 +74,42 @@ background:#FC76A1;
     display: none;
 }
 .menu {
-    justify-content: center;
-    background-color: gray;
-
+    position: relative;
+    width: 13px;
+    height: 2px;
+    background-color: #181820;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s all;
+}
+.menu::before {
+    content:"";
+    height: 2px;
+    width: 13px;
+    background-color: #181820;
+    position: absolute;
+    bottom:4px ;
+    }
+#picture {
+    display: none;
 }
 .menu::after {
     content:"";
-    height: 4px;
-    width: 5px;
+    height: 2px;
+    width: 13px;
     background-color: #181820;
     position: absolute;
+    top: 4px;
 }
-#picture {
+.menu:hover {
+    transform: rotate(45deg);
+
+}
+.menu:hover::after {
+    transform: rotate(-90deg);
+    top: 0px;
+    left: 0px;
+}
+.menu:hover::before {
     display: none;
 }
