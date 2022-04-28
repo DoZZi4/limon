@@ -1,6 +1,6 @@
 function EditTask (list , task , index){
-list[index]=task
-return task
+    list[index]=task;
+    return task;
 }
 
-export {EditTask}
+export {EditTask};
