@@ -19,14 +19,4 @@ tasks = addTask (tasks , text);
 tasks = addTask (tasks , toxt);
 tasks = addTask (tasks , task);
 tasks = addTask (tasks , task);
-ShowAllTasks (tasks);
-tasks = DeleteTask (tasks , 0);
-ShowAllTasks (tasks);
-tasks = DeleteTask (tasks , 1);
-ShowAllTasks(tasks);
-let text1 = {
-    text:'have lunch',
-    isDone:true
-};
-tasks = EditTask (tasks , text1  , 1);
-ShowAllTasks (tasks);
+ShowAllTasks (tasks)
