@@ -1,7 +1,7 @@
 const checkboxTemplate = `
-    <div class="checkbox">
+    <div class="checkbox task">
     <div class="checkbox-task">  
-        <input type="checkbox" id="click" class="hidden">
+        <input type="checkbox"  class="hidden click">
         <label for="click" class="tesks">
         </label>
         <span class="home"></span>

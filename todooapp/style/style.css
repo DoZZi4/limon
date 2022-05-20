@@ -35,14 +35,14 @@ body {
     transition: 0.3s all;
     margin-right: 10px;
 }
-#click {
+.click {
     justify-content: center;
     background-color: pink;
 }
-#click:checked+ .tesks {
+.click:checked+ .tesks {
 background:#FC76A1;
 }
-#click:checked+ .tesks::before {
+.click:checked+ .tesks::before {
     content: "";
     height: 2px;
     width: 5px;
@@ -52,7 +52,7 @@ background:#FC76A1;
     top: 12px;
     left: 5px;
 }
-#click:checked+ .tesks::after {
+.click:checked+ .tesks::after {
     content:"";
     height: 2px;
     width: 13px;
@@ -154,4 +154,13 @@ background:#FC76A1;
 .checkbox-task {
     display: flex;
     align-items: center;
+}
+#OK {
+    display: flex;
+    color: #E378CE;
+    background-color: #181820;
+}
+#add {
+    background-color: #181820;
+    color: #E378CE;
 }
