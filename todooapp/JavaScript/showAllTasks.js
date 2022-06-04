@@ -1,10 +1,12 @@
 import { checkboxTemplate } from './templates.js';
 import {EditTask} from './EditTask.js';
+import {DeleteTask} from'./DeleteTask.js';
 function MarkTask (task, index){
     
 }
-function ShowAllTasks (list){
-    let tasks = document.querySelectorAll('.task')
+function ShowAllTasks (){
+    let list = JSON.parse(window.localStorage.getItem('tasks'));
+    let tasks = document.querySelectorAll('.task');
     for (let i = 0;i <tasks.length;i++){
         tasks[i].remove();
     } 
@@ -18,5 +20,12 @@ function ShowAllTasks (list){
         home.innerText = list[i].text;
         Body.appendChild (div);
     }
+    document.querySelectorAll('.trash').forEach(function (trash , index){
+        trash.addEventListener('click' , function(){
+            list=DeleteTask(list , index);
+            ShowAllTasks(list);
+        });
+    
+    });
 }
 export {ShowAllTasks};
