@@ -1,9 +1,6 @@
 import { checkboxTemplate } from './templates.js';
 import {EditTask} from './EditTask.js';
-import {DeleteTask} from'./DeleteTask.js';
-function MarkTask (task, index){
-    
-}
+import {DeleteStorageTask,MarkTask} from './Storage.js';
 function ShowAllTasks (){
     let list = JSON.parse(window.localStorage.getItem('tasks'));
     let tasks = document.querySelectorAll('.task');
@@ -16,14 +13,21 @@ function ShowAllTasks (){
         div.innerHTML=checkboxTemplate;
         div.querySelector('.click').setAttribute('id' , `click${i}`);
         div.querySelector('.tesks').setAttribute('for', `click${i}`);
+        if(list[i].isDone){
+            div.querySelector('.click').setAttribute('checked',list[i].isDone);
+        }
+        div.querySelector('.tesks').addEventListener('click',function(){
+            MarkTask(i);
+        });
+
         const home = div.querySelector('.home');
         home.innerText = list[i].text;
         Body.appendChild (div);
     }
     document.querySelectorAll('.trash').forEach(function (trash , index){
         trash.addEventListener('click' , function(){
-            list=DeleteTask(list , index);
-            ShowAllTasks(list);
+            DeleteStorageTask(index);
+            ShowAllTasks();
         });
     
     });

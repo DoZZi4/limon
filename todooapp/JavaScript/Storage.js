@@ -30,7 +30,19 @@ function DeleteStorageTask (index){
 }
 
 
+function MarkTask (index){
+    let tasks = JSON.parse(window.localStorage.getItem('tasks'));
+    tasks[index].isDone=!tasks[index].isDone;
+    window.localStorage.setItem('tasks',JSON.stringify(tasks));
+
+}
+
+
+
+
+
+
 
 window.localStorage.getItem('tasks');
 console.log(window.localStorage.getItem('tasks'));
-export {AddStorageTasks,DeleteStorageTask};
+export {AddStorageTasks,DeleteStorageTask,MarkTask};
