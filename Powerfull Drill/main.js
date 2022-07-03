@@ -1,27 +1,6 @@
 const express = require("express");
-const {dataPath} = require("./DB/getData.js")
-console.log(dataPath)
-// let HTTP = require("http");
-// let requestListener = function(req,res){
-    
-//     if (req.url==="/"){
-//         res.writeHead(200)
-//         res.end("Если ты это читаешь ты красавчик")
-//     }
-
-//     if (req.url==="/date"){
-//         res.writeHead(200)
-//         res.end(new Date())
-//     }
-
-//     if(req.url==="/info"){
-//         res.writeHead(200)
-//         res.end(JSON.stringify({user: "Jhon",
-//         email: "test@mail.ru"}))
-//     }
-// }   
-//     let server = HTTP.createServer(requestListener)
-//     server.listen(5000)
+const saveData = require('./DB/saveData')
+saveData('drill','epic drill')
     const app = express()
     app.get("/",function(req,res){
         res.send("hello broyk")
