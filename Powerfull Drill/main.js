@@ -1,4 +1,6 @@
 const express = require("express");
+const {dataPath} = require("./DB/getData.js")
+console.log(dataPath)
 // let HTTP = require("http");
 // let requestListener = function(req,res){
     
@@ -31,6 +33,9 @@ const express = require("express");
         res.send(JSON.stringify({user: "Jhon",
             email: "test@mail.ru"}))
     })
-        
+        app.get("/hello/:name" ,function(req,res){
+            let name = req.params.name
+            res.send(`hello ${name}`)
+        } )
     
     app.listen(7070)
