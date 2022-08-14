@@ -11,3 +11,9 @@ const getData = (key)=>{
     return parseData;
 }
 module.exports= getData
+
+function sum(a,b){
+    return a + b
+}
+sum(10,40)
+console.log(sum(10,40))

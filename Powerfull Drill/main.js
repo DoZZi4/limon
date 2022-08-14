@@ -1,6 +1,6 @@
+const Router = require('./API/router')
 const express = require("express");
-const saveData = require('./DB/saveData')
-saveData('drill','epic drill')
+const dig = require('./core/dig')
     const app = express()
     app.get("/",function(req,res){
         res.send("hello broyk")
@@ -16,5 +16,7 @@ saveData('drill','epic drill')
             let name = req.params.name
             res.send(`hello ${name}`)
         } )
+        app.use(Router);
     
     app.listen(7070)
+    dig()
