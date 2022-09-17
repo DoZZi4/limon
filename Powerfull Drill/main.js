@@ -1,7 +1,9 @@
-const Router = require('./API/router')
-const express = require("express");
-const dig = require('./core/dig')
+import { Router } from "./API/router.js";
+import  express  from "express";
+import cors from 'cors';
+import { dig } from './core/dig.js'
     const app = express()
+    app.use(cors());
     app.get("/",function(req,res){
         res.send("hello broyk")
     })

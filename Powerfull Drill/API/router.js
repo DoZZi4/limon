@@ -1,6 +1,6 @@
-const express = require ('express')
-const dig = require('../core/dig')
-const getData = require('../DB/getData')
+import express  from 'express'
+import {dig}  from'../core/dig.js'
+import {getData}  from'../DB/getData.js'
 const Router = express.Router()
 Router.get("/stats", function(req,res){
     let rout = getData()
@@ -9,7 +9,10 @@ Router.get("/stats", function(req,res){
     
 })
 Router.get("/dig", function(req,res){
-    res.send(`hello`)
+    dig()
+    let deep = getData('deep')
+    let energy = getData('energy')
+    res.send({deep:deep,energy:energy}).status(200)
 })
 
-module.exports = Router
+export { Router }
